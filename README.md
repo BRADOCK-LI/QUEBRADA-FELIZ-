@@ -9,6 +9,7 @@ Site narrativo em português, feito em HTML, CSS e JavaScript, para publicação
 ## O que tem no site
 
 - Uma experiência de leitura com três capítulos e índice navegável.
+- Seção de registros do projeto com fotografia, legenda e acesso à imagem completa.
 - Design adaptado para celular, tablet e computador.
 - Animações que respeitam a preferência por movimento reduzido.
 - Menu acessível, tamanho de texto ajustável e progresso de leitura.
@@ -17,7 +18,7 @@ Site narrativo em português, feito em HTML, CSS e JavaScript, para publicação
 
 ## Conteúdo
 
-O texto inicial é um **conto fictício de demonstração**. Pessoas, acontecimentos e lugar são imaginários. A fotografia é ilustrativa, gerada por inteligência artificial. O próprio site informa isso aos leitores.
+Os três capítulos apresentam um **conto fictício de demonstração**: pessoas, acontecimentos e lugar descritos são imaginários. As imagens da rua na abertura e no intervalo são ilustrativas, geradas por inteligência artificial. A seção **Registros do projeto** apresenta uma fotografia enviada para o site, preservada em seu enquadramento e resolução originais. O próprio site diferencia esses conteúdos para os leitores.
 
 Para contar outra história, edite os textos de `docs/index.html`. A aparência fica em `docs/styles.css` e as interações em `docs/script.js`. As imagens e o ícone ficam em `docs/assets/`.
 
@@ -52,6 +53,7 @@ docs/index.html
 docs/styles.css
 docs/script.js
 docs/assets/quebrada-hero.webp
+docs/assets/quebrada-feliz-brincadeira-com-bola.jpeg
 docs/assets/sun.svg
 ```
 

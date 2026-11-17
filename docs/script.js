@@ -56,7 +56,10 @@
     const total = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
     const progress = total ? Math.max(0, Math.min(100, window.scrollY / total * 100)) : 0;
     document.documentElement.style.setProperty('--reading-progress', progress.toFixed(2) + '%');
-    readerTools.classList.toggle('visible', window.scrollY > window.innerHeight * .65);
+    const firstChapter = chapters[0]?.getBoundingClientRect();
+    const lastChapter = chapters[chapters.length - 1]?.getBoundingClientRect();
+    const readingStory = firstChapter && lastChapter && firstChapter.top <= window.innerHeight * .7 && lastChapter.bottom >= window.innerHeight * .15;
+    readerTools.classList.toggle('visible', Boolean(readingStory));
     const readingLine = window.innerHeight * .42;
     let current = null;
     chapters.forEach((chapter, index) => { if (chapter.getBoundingClientRect().top <= readingLine) current = index; });
